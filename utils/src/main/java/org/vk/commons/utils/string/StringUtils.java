@@ -6,6 +6,7 @@ package org.vk.commons.utils.string;
  * @author viko
  * @version 0.1
  */
+
 public final class StringUtils {
 
 	private StringUtils() {
