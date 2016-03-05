@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/UtilTest"
+	xmlns:tns="http://www.example.org/UtilTest" elementFormDefault="qualified"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.1">
+
+	<annotation>
+		<appinfo>
+			<jaxb:schemaBindings>
+				<jaxb:package name="org.vk.test.ws.types" />
+			</jaxb:schemaBindings>
+		</appinfo>
+	</annotation>
+
+	<element name="webServiceTestRequest">
+		<complexType>
+			<sequence>
+				<element name="text1" type="string" minOccurs="0" maxOccurs="1" />
+				<element name="text2" type="string" minOccurs="0" maxOccurs="1" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="webServiceTestResponse">
+		<complexType>
+			<sequence>
+				<element name="text1Result" type="string" />
+				<element name="text2Result" type="string" />
+			</sequence>
+		</complexType>
+	</element>
+
+
+
+</schema>
