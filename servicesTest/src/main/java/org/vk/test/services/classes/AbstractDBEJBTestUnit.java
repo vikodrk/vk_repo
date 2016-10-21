@@ -33,10 +33,7 @@ public abstract class AbstractDBEJBTestUnit
     {
       EntityManagerFactory emf = Persistence.createEntityManagerFactory( "persistenceUnitTest" );
       em = emf.createEntityManager();
-      // Agregar la relación de daos y sus implementaciones
       initMapDAO();
-      // Llamar la inicialización de los catálogos
-      initializeData( "dataset/catalog/catalog.sql" );
     }
   }
 
